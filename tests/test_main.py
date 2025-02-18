@@ -13,3 +13,4 @@ def test_main_page_content(client):
     response = client.get("/")
     assert response.status_code == 200
     assert b"Hello CPS3500" in response.data
+
