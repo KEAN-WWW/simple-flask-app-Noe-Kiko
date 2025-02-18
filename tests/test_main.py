@@ -1,4 +1,5 @@
 """This is a test script to test flask application"""
+
 import pytest
 from app.app import app
 
@@ -13,4 +14,3 @@ def test_main_page_content(client):
     response = client.get("/")
     assert response.status_code == 200
     assert b"Hello CPS3500" in response.data
-

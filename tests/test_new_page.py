@@ -13,4 +13,3 @@ def test_new_page_content(client):
     response = client.get("/new_page")
     assert response.status_code == 200
     assert b"New Page" in response.data
-
